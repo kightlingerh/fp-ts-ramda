@@ -5,8 +5,10 @@ import * as R from 'ramda';
 const suite = new Benchmark.Suite();
 
 /*
-adjust (ramda) x 12,661,072 ops/sec ±0.41% (87 runs sampled)
-adjust (fp-ts) x 19,939,902 ops/sec ±0.48% (88 runs sampled)
+prop (ramda) x 40,803,823 ops/sec ±0.59% (88 runs sampled)
+prop (fp-ts) x 23,918,791 ops/sec ±0.57% (90 runs sampled)
+prop (ramda - curried) x 4,400,868 ops/sec ±0.67% (88 runs sampled)
+prop (fp-ts - curried) x 17,314,301 ops/sec ±0.95% (90 runs sampled)
 */
 
 suite
