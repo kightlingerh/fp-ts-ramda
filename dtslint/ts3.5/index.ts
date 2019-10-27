@@ -1,7 +1,7 @@
 import * as FR from '../../src';
 import * as R from 'ramda';
 import { ordNumber } from 'fp-ts/lib/Ord';
-import { eqNumber } from 'fp-ts/lib/Eq';
+import { eqBoolean, eqNumber } from 'fp-ts/lib/Eq';
 
 // fromPairs
 
@@ -121,3 +121,8 @@ FR.any(odd); // $ExpectType Predicate<number[]>
 // all
 FR.all(odd, [20]); // $ExpectType boolean
 FR.all(odd); // $ExpectType Predicate<number[]>
+
+// eqBy
+FR.eqBy(eqBoolean)(odd); // $ExpectType { (x: B, y: B): boolean; (x: B): Predicate<B>; }
+FR.eqBy(eqBoolean)(odd, 5); // $ExpectType Predicate<number>
+FR.eqBy(eqBoolean)(odd, 5, 10); // $ExpectType boolean

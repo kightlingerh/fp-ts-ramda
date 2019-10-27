@@ -278,4 +278,17 @@ describe('fp-ts-ramda', () => {
       { examples: [[[]]] }
     );
   });
+  it('eqBy', () => {
+    const odd = (n: number) => n % 2 !== 0;
+    fc.assert(
+      fc.property(
+        fc.integer(),
+        fc.integer(),
+        (x, y) =>
+          eqBoolean.equals(R.eqBy(odd, x, y), FR.eqBy(eqBoolean)(odd, x, y)) &&
+          eqBoolean.equals(R.eqBy(odd)(x)(y), FR.eqBy(eqBoolean)(odd)(x)(y))
+      ),
+      { examples: [[0, 0]] }
+    );
+  });
 });
