@@ -1,53 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1572db61-d872-40aa-9b3b-5a8b420867c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/modules/all.ts.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/modules/allPass.ts.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/modules/any.ts.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/modules/anyPass.ts.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/modules/equals.ts.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/modules/prop.ts.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/modules/shared/monoidAllFoldMap.ts.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/modules/shared/monoidAnyFoldMap.ts.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/perf/all.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/perf/allPass.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/perf/any.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/perf/anyPass.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/perf/equals.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/perf/objOf.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/add.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/all.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/allPass.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/any.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/anyPass.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/equals.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/objOf.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/modules/always.ts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/modules/always.ts.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/modules/and.ts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/modules/and.ts.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/modules/append.ts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/modules/append.ts.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/modules/assoc.ts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/modules/assoc.ts.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/modules/clamp.ts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/modules/clamp.ts.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/modules/defaultTo.ts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/modules/defaultTo.ts.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/modules/endsWith.ts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/modules/endsWith.ts.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/modules/fromPairs.ts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/modules/fromPairs.ts.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/modules/index.ts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/modules/index.ts.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/modules/takeLast.ts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/modules/takeLast.ts.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/modules/toPairs.ts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/modules/toPairs.ts.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/modules/xprod.ts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/modules/xprod.ts.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtslint/ts3.5/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dtslint/ts3.5/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/prop.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/prop.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/index.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/acorn" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/acorn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/atob" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/atob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/cake" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/cake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/coffee" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/coffee" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/docs-ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/docs-ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/dtslint" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/dtslint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/escodegen" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/escodegen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/esgenerate" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/esgenerate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/esparse" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/esparse" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/esvalidate" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/esvalidate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/handlebars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/import-local-fixture" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/import-local-fixture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/is-ci" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/is-ci" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/jest" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/jest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/jest-runtime" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/jest-runtime" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/js-yaml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/js-yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/jsesc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/jsesc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/json5" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/json5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/loose-envify" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/loose-envify" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/markdown-toc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/markdown-toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/mkdirp" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/mkdirp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/parser" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/parser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/prettier" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/prettier" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/remarkable" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/remarkable" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/rimraf" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/rimraf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/sane" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/sane" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/sshpk-conv" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/sshpk-conv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/sshpk-sign" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/sshpk-sign" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/sshpk-verify" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/sshpk-verify" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/ts-jest" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/ts-jest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/ts-node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/ts-node" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/tsc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/tsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/tslint" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/tslint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/tsserver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/tsserver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/uglifyjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/uglifyjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/uuid" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/uuid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/watch" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/watch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/which" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/which" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/node_modules/.bin/json5" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/node_modules/.bin/json5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/node_modules/.bin/parser" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/node_modules/.bin/parser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/core/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/core/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/generator/node_modules/.bin/jsesc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/generator/node_modules/.bin/jsesc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/template/node_modules/.bin/parser" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/template/node_modules/.bin/parser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/traverse/node_modules/.bin/parser" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/traverse/node_modules/.bin/parser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@jest/core/node_modules/.bin/jest-runtime" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/core/node_modules/.bin/jest-runtime" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@jest/core/node_modules/.bin/rimraf" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/core/node_modules/.bin/rimraf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@jest/reporters/node_modules/.bin/jest-runtime" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/reporters/node_modules/.bin/jest-runtime" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@jest/test-sequencer/node_modules/.bin/jest-runtime" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/test-sequencer/node_modules/.bin/jest-runtime" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/babel__core/node_modules/.bin/parser" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/babel__core/node_modules/.bin/parser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/babel__template/node_modules/.bin/parser" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/babel__template/node_modules/.bin/parser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/acorn-globals/node_modules/.bin/acorn" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/acorn-globals/node_modules/.bin/acorn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cross-spawn/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cross-spawn/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cross-spawn/node_modules/.bin/which" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cross-spawn/node_modules/.bin/which" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/docs-ts/node_modules/.bin/markdown-toc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/docs-ts/node_modules/.bin/markdown-toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/docs-ts/node_modules/.bin/prettier" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/docs-ts/node_modules/.bin/prettier" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/docs-ts/node_modules/.bin/rimraf" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/docs-ts/node_modules/.bin/rimraf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/docs-ts/node_modules/.bin/ts-node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/docs-ts/node_modules/.bin/ts-node" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/docs-ts/node_modules/.bin/tsc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/docs-ts/node_modules/.bin/tsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/docs-ts/node_modules/.bin/tsserver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/docs-ts/node_modules/.bin/tsserver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/escodegen/node_modules/.bin/esparse" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/escodegen/node_modules/.bin/esparse" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/escodegen/node_modules/.bin/esvalidate" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/escodegen/node_modules/.bin/esvalidate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gray-matter/node_modules/.bin/cake" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gray-matter/node_modules/.bin/cake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gray-matter/node_modules/.bin/coffee" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gray-matter/node_modules/.bin/coffee" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gray-matter/node_modules/.bin/js-yaml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gray-matter/node_modules/.bin/js-yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/handlebars/node_modules/.bin/uglifyjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/handlebars/node_modules/.bin/uglifyjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/http-signature/node_modules/.bin/sshpk-conv" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/http-signature/node_modules/.bin/sshpk-conv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/http-signature/node_modules/.bin/sshpk-sign" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/http-signature/node_modules/.bin/sshpk-sign" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/http-signature/node_modules/.bin/sshpk-verify" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/http-signature/node_modules/.bin/sshpk-verify" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/invariant/node_modules/.bin/loose-envify" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/invariant/node_modules/.bin/loose-envify" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/istanbul-lib-instrument/node_modules/.bin/parser" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/istanbul-lib-instrument/node_modules/.bin/parser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/istanbul-lib-instrument/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/istanbul-lib-instrument/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/istanbul-lib-source-maps/node_modules/.bin/rimraf" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/istanbul-lib-source-maps/node_modules/.bin/rimraf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/istanbul-reports/node_modules/.bin/handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/istanbul-reports/node_modules/.bin/handlebars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jest-cli/node_modules/.bin/import-local-fixture" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-cli/node_modules/.bin/import-local-fixture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jest-cli/node_modules/.bin/is-ci" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-cli/node_modules/.bin/is-ci" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jest-haste-map/node_modules/.bin/sane" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-haste-map/node_modules/.bin/sane" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jest-jasmine2/node_modules/.bin/jest-runtime" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-jasmine2/node_modules/.bin/jest-runtime" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jest-runner/node_modules/.bin/jest-runtime" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-runner/node_modules/.bin/jest-runtime" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jest-snapshot/node_modules/.bin/mkdirp" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-snapshot/node_modules/.bin/mkdirp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jest-snapshot/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-snapshot/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jest-util/node_modules/.bin/is-ci" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-util/node_modules/.bin/is-ci" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jest-util/node_modules/.bin/mkdirp" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-util/node_modules/.bin/mkdirp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jest/node_modules/.bin/import-local-fixture" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest/node_modules/.bin/import-local-fixture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jest/node_modules/.bin/jest" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest/node_modules/.bin/jest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/node_modules/.bin/esparse" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/js-yaml/node_modules/.bin/esparse" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/node_modules/.bin/esvalidate" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/js-yaml/node_modules/.bin/esvalidate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jsdom/node_modules/.bin/acorn" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jsdom/node_modules/.bin/acorn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jsdom/node_modules/.bin/escodegen" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jsdom/node_modules/.bin/escodegen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jsdom/node_modules/.bin/esgenerate" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jsdom/node_modules/.bin/esgenerate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/make-dir/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/make-dir/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/markdown-toc/node_modules/.bin/remarkable" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/markdown-toc/node_modules/.bin/remarkable" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/node-notifier/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-notifier/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/node-notifier/node_modules/.bin/which" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-notifier/node_modules/.bin/which" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/normalize-package-data/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/normalize-package-data/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/request/node_modules/.bin/uuid" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/request/node_modules/.bin/uuid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sane/node_modules/.bin/watch" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sane/node_modules/.bin/watch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/source-map-resolve/node_modules/.bin/atob" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map-resolve/node_modules/.bin/atob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ts-jest/node_modules/.bin/jest" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ts-jest/node_modules/.bin/jest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ts-jest/node_modules/.bin/json5" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ts-jest/node_modules/.bin/json5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ts-jest/node_modules/.bin/mkdirp" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ts-jest/node_modules/.bin/mkdirp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ts-jest/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ts-jest/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ts-node/node_modules/.bin/tsc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ts-node/node_modules/.bin/tsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ts-node/node_modules/.bin/tsserver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ts-node/node_modules/.bin/tsserver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ts-simple-ast/node_modules/.bin/tsc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ts-simple-ast/node_modules/.bin/tsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ts-simple-ast/node_modules/.bin/tsserver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ts-simple-ast/node_modules/.bin/tsserver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tslint/node_modules/.bin/js-yaml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tslint/node_modules/.bin/js-yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tslint/node_modules/.bin/mkdirp" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tslint/node_modules/.bin/mkdirp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tslint/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tslint/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tslint/node_modules/.bin/tsc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tslint/node_modules/.bin/tsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tslint/node_modules/.bin/tsserver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tslint/node_modules/.bin/tsserver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tsutils/node_modules/.bin/tsc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tsutils/node_modules/.bin/tsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tsutils/node_modules/.bin/tsserver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tsutils/node_modules/.bin/tsserver" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
