@@ -99,3 +99,42 @@ FR.prop('notKey')(propTestObj); // $ExpectError
 FR.prop('key', propTestObj); // $ExpectType number
 FR.prop('key'); // $ExpectType <T extends Record<"key", any>>(obj: T) => T["key"]
 FR.prop('key')(propTestObj); // $ExpectType number
+
+// allPass
+const odd = (n: number) => n % 2 !== 0;
+const lt20 = (n: number) => n < 20;
+const gt5 = (n: number) => n > 5;
+
+R.allPass([odd, lt20, gt5], 20); // $ExpectError
+FR.allPass([odd, lt20, gt5], 20); // $ExpectType boolean
+FR.allPass([odd, lt20, gt5]); // $ExpectType Predicate<number>
+
+// anyPass
+R.anyPass([odd, lt20, gt5], 20); // $ExpectError
+FR.anyPass([odd, lt20, gt5], 20); // $ExpectType boolean
+FR.anyPass([odd, lt20, gt5]); // $ExpectType Predicate<number>
+
+// any
+FR.any(odd, [20]); // $ExpectType boolean
+FR.any(odd); // $ExpectType Predicate<number[]>
+
+// all
+FR.all(odd, [20]); // $ExpectType boolean
+FR.all(odd); // $ExpectType Predicate<number[]>
+
+// equals
+FR.equals(eqNumber); // $ExpectType { (x: number, y: number): boolean; (x: number): Predicate<number>; }
+FR.equals(eqNumber)(125); // $ExpectType Predicate<number>
+FR.equals(eqNumber)(123)(39); // $ExpectType boolean
+FR.equals(eqNumber)(36, 136); // $ExpectType boolean
+FR.equals(eqNumber)('', 0); // $ExpectError
+
+// objOf
+FR.objOf('key', 5); // $ExpectType Record<"key", number>
+FR.objOf('key')(5); // $ExpectType Record<"key", number>
+FR.objOf('key'); // $ExpectType <T>(a: T) => Record<"key", T>
+
+// add
+FR.add(5); // $ExpectType Endomorphism<number>
+FR.add(5)(5); // $ExpectType number
+FR.add(5, 5); // $ExpectType number

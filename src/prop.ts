@@ -1,7 +1,5 @@
-import { Lens } from 'monocle-ts';
-
 function _prop<K extends keyof T, T extends object>(k: K, obj: T): T[K] {
-  return Lens.fromProp<T>()(k).get(obj);
+  return obj[k];
 }
 
 /**

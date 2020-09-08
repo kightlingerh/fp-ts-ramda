@@ -1,8 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ad8ab78-537e-4319-82be-afe18a4cb924" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="1572db61-d872-40aa-9b3b-5a8b420867c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/modules/all.ts.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/modules/allPass.ts.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/modules/any.ts.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/modules/anyPass.ts.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/modules/equals.ts.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/modules/prop.ts.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/modules/shared/monoidAllFoldMap.ts.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/modules/shared/monoidAnyFoldMap.ts.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/perf/all.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/perf/allPass.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/perf/any.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/perf/anyPass.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/perf/equals.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/perf/objOf.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/add.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/all.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/allPass.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/any.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/anyPass.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/equals.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objOf.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/modules/always.ts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/modules/always.ts.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/modules/and.ts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/modules/and.ts.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/modules/append.ts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/modules/append.ts.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/modules/assoc.ts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/modules/assoc.ts.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/modules/clamp.ts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/modules/clamp.ts.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/modules/defaultTo.ts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/modules/defaultTo.ts.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/modules/endsWith.ts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/modules/endsWith.ts.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/modules/fromPairs.ts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/modules/fromPairs.ts.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/modules/index.ts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/modules/index.ts.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/modules/takeLast.ts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/modules/takeLast.ts.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/modules/toPairs.ts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/modules/toPairs.ts.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/modules/xprod.ts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/modules/xprod.ts.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtslint/ts3.5/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dtslint/ts3.5/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prop.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/prop.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/index.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,13 +59,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="C:\Users\kight\IdeaProjects\fp-ts-ramda\.idea" />
-      </set>
-    </option>
-  </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
       <list>
@@ -39,6 +73,10 @@
     </option>
   </component>
   <component name="ProjectId" id="1QyzpDrGurc3Iccz8LsusMq9nzn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -58,24 +96,12 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\Users\kight\IdeaProjects\fp-ts-ramda\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\kight\IdeaProjects\fp-ts-ramda\src" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
@@ -101,8 +127,9 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
     <option name="exactExcludedFiles">
       <list>
         <option value="$PROJECT_DIR$/dtslint/ts3.5/index.d.ts" />
@@ -119,5 +146,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1599588880908">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599588880908" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1599588777931">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599588777931" />
   </component>
 </project>

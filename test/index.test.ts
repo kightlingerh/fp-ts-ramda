@@ -1,10 +1,11 @@
-import * as R from 'ramda';
 import * as fc from 'fast-check';
-import * as FR from '../src';
-import { getEq as getArrayEq } from 'fp-ts/lib/Array';
-import { eqNumber, fromEquals, getStructEq, strictEqual } from 'fp-ts/lib/Eq';
+import { getEq, getEq as getArrayEq } from 'fp-ts/lib/Array';
+import { eqBoolean, eqNumber, eqString, fromEquals, getStructEq, strictEqual } from 'fp-ts/lib/Eq';
+import { flow } from 'fp-ts/lib/function';
+import { Ord, ordDate, ordNumber, ordString } from 'fp-ts/lib/Ord';
 import { getEq as getRecordEq } from 'fp-ts/lib/Record';
-import { ordNumber, ordString, ordDate, Ord } from 'fp-ts/lib/Ord';
+import * as R from 'ramda';
+import * as FR from '../src';
 
 function JSONEqual(a: unknown, b: unknown): boolean {
   return JSON.stringify(a) === JSON.stringify(b);
@@ -24,7 +25,7 @@ describe('fp-ts-ramda', () => {
       fc.property(fc.object(), r => {
         const as1 = FR.toPairs(r);
         as1.sort();
-        const as2 = R.toPairs(r);
+        const as2 = R.toPairs(r as any);
         as2.sort();
         return getArrayEq(fromEquals(JSONEqual)).equals(as1, as2);
       })
@@ -143,8 +144,8 @@ describe('fp-ts-ramda', () => {
   it('defaultTo', () => {
     fc.assert(
       fc.property(
-        fc.anything().filter(v => !isNaN(v)),
-        fc.anything().filter(v => v != null && !isNaN(v)),
+        fc.anything().filter(v => !isNaN(v as any)),
+        fc.anything().filter(v => v != null && !isNaN(v as any)),
         (value, d) => R.defaultTo(d, value) === FR.defaultTo(d, value)
       )
     );
@@ -152,13 +153,194 @@ describe('fp-ts-ramda', () => {
 
   it('prop', () => {
     fc.assert(
-      fc.property(fc.integer(), v => {
-        const obj = { key: v };
-        return (
-          eqNumber.equals(R.prop('key', obj), FR.prop('key', obj)) &&
-          eqNumber.equals(R.prop('key')(obj), FR.prop('key')(obj))
-        );
-      })
+      fc.property(
+        fc
+          .object()
+          .filter(obj => Object.keys(obj).length > 0)
+          .chain(obj =>
+            fc.oneof(...Object.keys(obj).map(fc.constant)).map(key => ({
+              key: key as string,
+              obj: obj as Record<string, any>
+            }))
+          ),
+        ({ obj, key }) => {
+          return JSONEqual(R.prop(key, obj), FR.prop(key, obj)) && JSONEqual(R.prop(key)(obj), FR.prop(key)(obj));
+        }
+      )
+    );
+  });
+  it('allPass', () => {
+    const odd = (n: number) => n % 2 !== 0;
+    const lt20 = (n: number) => n < 20;
+    const gt5 = (n: number) => n > 5;
+    fc.assert(
+      fc.property(
+        fc.integer(),
+        num =>
+          eqBoolean.equals(R.allPass([odd, lt20, gt5])(num), FR.allPass([odd, lt20, gt5], num)) &&
+          eqBoolean.equals(R.allPass([])(num), FR.allPass([], num))
+      ),
+      { examples: [[0]] }
+    );
+  });
+  it('anyPass', () => {
+    const odd = (n: number) => n % 2 !== 0;
+    const lt20 = (n: number) => n < 20;
+    const gt5 = (n: number) => n > 5;
+    fc.assert(
+      fc.property(
+        fc.integer(),
+        num =>
+          eqBoolean.equals(R.anyPass([odd, lt20, gt5])(num), FR.anyPass([odd, lt20, gt5], num)) &&
+          eqBoolean.equals(R.anyPass([])(num), FR.anyPass([], num))
+      ),
+      { examples: [[0]] }
+    );
+  });
+  it('any', () => {
+    const odd = (n: number) => n % 2 !== 0;
+    const isCapitalized = (str: string) => (str.length ? /[A-Z]/.test(str[0]) : false);
+    fc.assert(
+      fc.property(
+        fc.array(fc.integer()),
+        as => eqBoolean.equals(R.any(odd, as), FR.any(odd, as)) && eqBoolean.equals(R.any(odd)(as), FR.any(odd)(as))
+      ),
+      { examples: [[[]]] }
+    );
+    fc.assert(
+      fc.property(
+        fc.array(
+          fc.record({
+            firstName: fc.string()
+          })
+        ),
+        as =>
+          eqBoolean.equals(
+            R.any(
+              R.pipe(
+                R.prop('firstName'),
+                isCapitalized
+              ),
+              as
+            ),
+            FR.any(
+              flow(
+                FR.prop('firstName'),
+                isCapitalized
+              ),
+              as
+            )
+          )
+      ),
+      { examples: [[[]]] }
+    );
+  });
+  it('all', () => {
+    const odd = (n: number) => n % 2 !== 0;
+    const isCapitalized = (str: string) => (str.length ? /[A-Z]/.test(str[0]) : false);
+    fc.assert(
+      fc.property(
+        fc.array(fc.integer()),
+        as => eqBoolean.equals(R.all(odd, as), FR.all(odd, as)) && eqBoolean.equals(R.all(odd)(as), FR.all(odd)(as))
+      ),
+      { examples: [[[]]] }
+    );
+    fc.assert(
+      fc.property(
+        fc.array(
+          fc.record({
+            firstName: fc.string()
+          })
+        ),
+        as =>
+          eqBoolean.equals(
+            R.all(
+              R.pipe(
+                R.prop('firstName'),
+                isCapitalized
+              ),
+              as
+            ),
+            FR.all(
+              flow(
+                FR.prop('firstName'),
+                isCapitalized
+              ),
+              as
+            )
+          )
+      ),
+      { examples: [[[]]] }
+    );
+  });
+  it('equals', () => {
+    fc.assert(
+      fc.property(
+        fc.integer(),
+        fc.integer(),
+        (x, y) =>
+          eqBoolean.equals(R.equals(x, y), FR.equals(eqNumber)(x, y)) &&
+          eqBoolean.equals(R.equals(x)(y), FR.equals(eqNumber)(x)(y))
+      ),
+      {
+        examples: [[0, 0]]
+      }
+    );
+    fc.assert(
+      fc.property(
+        fc.string(),
+        fc.string(),
+        (x, y) =>
+          eqBoolean.equals(R.equals(x, y), FR.equals(eqString)(x, y)) &&
+          eqBoolean.equals(R.equals(x)(y), FR.equals(eqString)(x)(y))
+      ),
+      {
+        examples: [['', '']]
+      }
+    );
+    fc.assert(
+      fc.property(
+        fc.boolean(),
+        fc.boolean(),
+        (x, y) =>
+          eqBoolean.equals(R.equals(x, y), FR.equals(eqBoolean)(x, y)) &&
+          eqBoolean.equals(R.equals(x)(y), FR.equals(eqBoolean)(x)(y))
+      )
+    );
+    fc.assert(
+      fc.property(
+        fc.array(fc.string()),
+        as =>
+          eqBoolean.equals(R.equals(as, as), FR.equals(getEq(eqString))(as, as)) &&
+          eqBoolean.equals(R.equals(as)(as), FR.equals(getEq(eqString))(as)(as))
+      ),
+      {
+        examples: [[[]]]
+      }
+    );
+  });
+  it('objOf', () => {
+    fc.assert(
+      fc.property(
+        fc.string(),
+        fc.anything(),
+        (x, y) => JSONEqual(R.objOf(x, y), FR.objOf(x, y)) && JSONEqual(R.objOf(x)(y), FR.objOf(x)(y))
+      ),
+      {
+        examples: [['', undefined]]
+      }
+    );
+  });
+  it('add', () => {
+    fc.assert(
+      fc.property(
+        fc.integer(),
+        fc.integer(),
+        (x, y) => eqNumber.equals(R.add(x, y), FR.add(x, y)) && eqNumber.equals(R.add(x)(y), FR.add(x)(y))
+      ),
+      {
+        examples: [[0, 0]]
+      }
     );
   });
 });
